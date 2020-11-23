@@ -1,5 +1,5 @@
 import * as Koa from "koa";
-import { serverStatic } from "./plugins";
+import { serverStatic, moduleRewrite } from "./plugins";
 import { IContext } from "./type";
 
 const createServer = () => {
@@ -8,7 +8,7 @@ const createServer = () => {
     rootPath: process.cwd(),
     app,
   };
-  const plugins = [serverStatic];
+  const plugins = [moduleRewrite, serverStatic];
   plugins.forEach((plugin) => plugin(context));
   return app;
 };

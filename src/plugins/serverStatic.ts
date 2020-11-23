@@ -1,7 +1,7 @@
 import * as koaStatic from "koa-static"
-import { IContext } from "../type";
+import { PluginFunc } from "./type";
 
-const serverStatic = ({ app, rootPath }: IContext) => {
+const serverStatic: PluginFunc = ({ app, rootPath }) => {
   app.use(koaStatic(rootPath));
 };
 
