@@ -7,7 +7,12 @@ let port: number | undefined = 4000;
   for (let i = 0; i < args.length; ++i) {
     const arg = args[i]
     if (arg === "--port") {
-      port = parseInt(args[i + 1]) || 4000;
+      const newPort = parseInt(args[i + 1])
+      if (isNaN(newPort)) {
+        throw new Error(`${args[i]} is not a number!`);
+      }
+
+      port = newPort;
       ++i
       continue
     }
@@ -17,7 +22,8 @@ let port: number | undefined = 4000;
         --port server start port 
       `)
       );
-      port = void 0
+      throw "";
+      
     }
   }
 })()
