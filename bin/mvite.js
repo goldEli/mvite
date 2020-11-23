@@ -1,2 +1,3 @@
 #! /usr/bin/env node
-require("../src/cli")
+console.log("hello")
+require("../dist")

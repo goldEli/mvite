@@ -1,9 +1,10 @@
-const Koa = require("koa");
-const { serverStatic } = require("./plugins");
+import * as Koa from "koa";
+import { serverStatic } from "./plugins";
+import { IContext } from "./type";
 
 const createServer = () => {
   const app = new Koa();
-  const context = {
+  const context: IContext = {
     rootPath: process.cwd(),
     app,
   };
@@ -12,4 +13,4 @@ const createServer = () => {
   return app;
 };
 
-module.exports = createServer;
+export default createServer;
