@@ -1,6 +1,6 @@
 {
   "name": "mvite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web dev tool via ES Module",
   "main": "index.js",
   "scripts": {
