@@ -28,3 +28,7 @@ $ mvite --help
 
 [npm-img]: https://img.shields.io/npm/v/mvite.svg
 [npm-url]: https://npmjs.com/package/mvite
+
+## Reference
+
+[vite](https://github.com/vitejs/vite)
