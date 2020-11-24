@@ -22,7 +22,7 @@ $ mvite --help
 
 - [x] Start server
 - [x] Static server
-- [ ] Rewrite import
+- [ ] Module rewrite
 - [ ] Babel
 - [ ] i18n
 
