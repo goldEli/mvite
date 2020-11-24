@@ -22,9 +22,9 @@ $ mvite --help
 
 - [x] Start server
 - [x] Static server
-- [ ] Module rewrite
-- [ ] Babel
-- [ ] i18n
+- [X] Module resolve
+- [x] React
+- [ ] Hot module replacement
 
 [npm-img]: https://img.shields.io/npm/v/mvite.svg
 [npm-url]: https://npmjs.com/package/mvite
