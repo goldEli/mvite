@@ -1,6 +1,6 @@
 {
   "name": "mvite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web dev tool via ES Module",
   "scripts": {
     "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/index.ts",
